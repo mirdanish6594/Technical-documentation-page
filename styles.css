@@ -1,0 +1,51 @@
+body {
+  padding: 10px 0 10px 0;
+}
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+  font-family: "fontawesome", sans-serif;
+}
+
+header {
+  text-transform: uppercase;
+  font-size:26px;
+}
+#navbar ul li {
+  list-style: none;
+}
+#navbar {
+  float: left;
+  max-height: 645px;
+  overflow-y: scroll;
+  display: block;
+  position: fixed;
+}
+#navbar a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #696969;
+}
+#main-doc {
+  padding:  0 0 0 310px;
+}
+.nav-header {
+  font-size: 24px;
+  margin-left: 30px;
+}
+/******CSS media query breakpoints*******/
+@media (max-width: 992px) { /* With these CSS media query breakpoints, we can change how our
+                               website would be displayed on phone, a tablet or a laptop without
+                               affecting how it looks originally.*/
+  #main-doc {
+    justify-content: center;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+         }
+  #navbar {
+    align-items: center;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
